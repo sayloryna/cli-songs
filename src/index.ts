@@ -1,4 +1,5 @@
 import askUser from "./askUser.js";
+
 const songPosition = askUser(`
 LISTA DE CANCIONES:
 1.Solo se vive una vez,
@@ -23,7 +24,8 @@ const songs = [
   "Me colé en una fiesta",
   "Bamboléo",
 ];
-if (songs.at(Number(songPosition) - 1) !== undefined) {
+
+if (typeof songs.at(Number(songPosition) - 1) === "undefined") {
   console.log(songs.at(Number(songPosition) - 1));
 } else {
   console.log("Introduce un número de la lista por favor");
