@@ -26,5 +26,5 @@ const songs = [
 if (songs.at(Number(songPosition) - 1) !== undefined) {
   console.log(songs.at(Number(songPosition) - 1));
 } else {
-  console.log("Introduce un numero de la lista por favor");
+  console.log("Introduce un número de la lista por favor");
 }
